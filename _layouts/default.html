@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			body {
+				margin: 0px;
+				background-color: #2b2b2b;
+			}
+		
+			.header_background {
+				background-color: black;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		
+			.header {
+				display: flex;
+				justify-content: space-between;
+				margin-left: 50px;
+				margin-right: 50px;
+				align-items: center;
+				color: white;
+				font-weight:bold;
+			}
+			
+			.header_left {
+				font-size: 30px;
+			}
+			
+			.header_right a {
+				margin-right: 20px;
+			}
+			
+			.header div a {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			.body {
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			.post {
+				margin: 50px 180px 50px 180px;
+			}
+			
+			.body_left {
+				background-color: #9e9e9e;
+				float: left;
+				width: 80%;
+				padding: 30px;
+				margin-right: 18px;
+			}
+			
+			.body_left a {
+				font-size: 20px;
+			}
+			
+			.body_left h4 {
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+			
+			.body_right {
+				float: right;
+				width: 25%;
+			}
+			
+			.body_right p {
+				font-weight: bold;
+				margin-top: 0px;
+			}
+			
+			.br_pad {
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.br_pad a {
+				margin-bottom: 10px;
+			}
+			
+			.br_post {
+				background-color: #9e9e9e;
+			}
+			
+			.br_tag {
+				margin-top: 20px;
+				background-color: #9e9e9e;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!-- header -->
+		<div class="header_background">
+			<div class="header">
+				<div class="header_left">
+					<a href="/index.html">River</a>
+				</div>
+				
+				<div class="header_right">
+					<a href="/index.html">Home</a>
+					<a href="/Posts.html">Posts</a>
+					<a href="/tags.html">Tags</a>
+					<a href="/about.html">About</a>
+				</div>
+			</div>
+		</div>
+		<!-- body -->
+		<div class="body post">
+			<!-- left: posts_list -->
+			<div class="body_left">
+				{{ content }}
+			</div>
+			
+			<!-- right: little sidebar -->
+			<div class="body_right">
+				<!-- recent posts -->
+				<div class="br_post br_pad">
+					<p>未來增加</p>
+				</div>
+				
+				<!-- tags -->
+				<div class="br_tag br_pad">
+					<p>未來增加</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
