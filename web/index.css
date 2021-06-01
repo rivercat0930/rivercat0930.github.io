@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* 設定橫向並左右擺放 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding大小 */
+    padding: 10px 10% 10px 10%;
+    /* header背景色 */
+    background-color: gray;
+    /* 字體大小(僅限header右側) */
+    font-size: 20px;
+}
+
+header div h1 {
+    /* 字體大小(header左側) */
+    font-size: 30px;
+}
+
+header div a {
+    /* header超連結顏色 */
+    color: white;
+    /* header超連結指標模式 */
+    cursor: pointer;
+    /* header文字樣式 */
+    text-decoration: none;
+}
+
+.header_left ul {
+    display: flex;
+}
+
+.header_left ul li {
+    /* header右側各元素的padding */
+    padding: 10px;
+    /* 清單樣式(none無圓點) */
+    list-style: none;
+}
+
+.back {
+    /* 整體padding */
+    padding: 5% 15% 5% 15%;
+    /* 背景顏色 */
+    background-color: rgba(0, 0, 0, .6);
+    /* 背景混和模式 */
+    background-blend-mode: multiply;
+    /* 背景圖片 */
+    background-image: url("sleepcat.jpg");
+    /* 背景重複:不重複 */
+    background-repeat: no-repeat;
+    /* 背景圖位置:置中 */
+    background-position: center center;
+    /* 背景圖附著模式 */
+    background-attachment: fixed;
+    /* 背景圖大小:覆蓋 */
+    background-size: cover;
+}
+
+.article {
+    background-color: #ffffffa8;
+    padding: 3% 4% 3% 4%;
+}
+
+.article > * {
+    padding: 2% 0%;
+}
+
+.article img {
+    width: 100%;
+}
+
+footer h3 {
+    /* 物件置中 */
+    display: flex;
+    justify-content: center;
+    /* margin大小 */
+    padding: 10px 0 10px 0;
+    /* footer背景色 */
+    background-color: #80808038;
+}
